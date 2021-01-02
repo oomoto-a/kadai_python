@@ -1,0 +1,631 @@
+[2020-12-01 02:04:34.139607]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 59, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 26, in write_ichiba_item
+    df = df[["商品名","価格"]]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1553, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1646, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['商品名'] not in index"
+
+[2020-12-01 02:06:44.535467]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 59, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 26, in write_ichiba_item
+    df = df[["商品名","価格"]]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1553, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1646, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['商品名'] not in index"
+
+[2020-12-01 02:09:00.795309]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 59, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 26, in write_ichiba_item
+    df = df[["商品名","価格"]]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1553, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1646, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['商品名'] not in index"
+
+[2020-12-01 02:10:39.295079]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 59, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 26, in write_ichiba_item
+    df = df[["商品名","価格"]]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1553, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1646, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['商品名'] not in index"
+
+[2020-12-01 02:11:53.948840]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 59, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 26, in write_ichiba_item
+    df = df[["商品名","価格"]]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1553, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1646, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['商品名'] not in index"
+
+[2020-12-01 02:21:17.532927]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 59, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 26, in write_ichiba_item
+    df = df[["商品名","価格"]]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1553, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1646, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['商品名'] not in index"
+
+[2020-12-01 02:34:59.839426]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 59, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 27, in write_ichiba_item
+    write_csv(df, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 13, in write_csv
+    df.to_csv(file_name, index=False, encoding="shift-jis", mode='a', header=header)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\generic.py", line 3204, in to_csv
+    formatter.save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 204, in save
+    self._save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 325, in _save
+    self._save_chunk(start_i, end_i)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 356, in _save_chunk
+    libwriters.write_csv_rows(self.data, ix, self.nlevels, self.cols, self.writer)
+  File "pandas\_libs\writers.pyx", line 68, in pandas._libs.writers.write_csv_rows
+UnicodeEncodeError: 'shift_jis' codec can't encode character '\u2014' in position 41: illegal multibyte sequence
+
+[2020-12-01 02:36:06.470336]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 59, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 27, in write_ichiba_item
+    write_csv(df, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 13, in write_csv
+    df.to_csv(file_name, index=False, encoding="shift-jis", mode='a', header=header)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\generic.py", line 3204, in to_csv
+    formatter.save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 204, in save
+    self._save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 325, in _save
+    self._save_chunk(start_i, end_i)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 356, in _save_chunk
+    libwriters.write_csv_rows(self.data, ix, self.nlevels, self.cols, self.writer)
+  File "pandas\_libs\writers.pyx", line 68, in pandas._libs.writers.write_csv_rows
+UnicodeEncodeError: 'shift_jis' codec can't encode character '\u2014' in position 41: illegal multibyte sequence
+
+[2020-12-01 02:39:08.126826]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 54, in get_ichiba_item
+    if result_json.get("count") > 0:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+[2020-12-01 02:39:44.464655]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 60, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 28, in write_ichiba_item
+    write_csv(df, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 13, in write_csv
+    df.to_csv(file_name, index=False, encoding="shift-jis", mode='a', header=header)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\generic.py", line 3204, in to_csv
+    formatter.save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 204, in save
+    self._save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 325, in _save
+    self._save_chunk(start_i, end_i)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 356, in _save_chunk
+    libwriters.write_csv_rows(self.data, ix, self.nlevels, self.cols, self.writer)
+  File "pandas\_libs\writers.pyx", line 68, in pandas._libs.writers.write_csv_rows
+UnicodeEncodeError: 'shift_jis' codec can't encode character '\u2014' in position 41: illegal multibyte sequence
+
+[2020-12-01 02:43:35.366049]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    file_name = ICHIBA_ITEM_FILE_NAME.format(dt_now)
+  File "C:\work\python\kadai01\study06\control.py", line 29, in write_ichiba_item
+    write_csv(df, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 13, in write_csv
+    df.to_csv(file_name, index=False, encoding="shift-jis", mode='a', header=header)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\generic.py", line 3204, in to_csv
+    formatter.save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 204, in save
+    self._save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 325, in _save
+    self._save_chunk(start_i, end_i)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 356, in _save_chunk
+    libwriters.write_csv_rows(self.data, ix, self.nlevels, self.cols, self.writer)
+  File "pandas\_libs\writers.pyx", line 68, in pandas._libs.writers.write_csv_rows
+UnicodeEncodeError: 'shift_jis' codec can't encode character '\u2014' in position 41: illegal multibyte sequence
+
+[2020-12-01 02:48:53.147983]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 59, in get_ichiba_item
+    if result_json.get("count") > 0:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+[2020-12-01 02:49:15.872625]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 65, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 29, in write_ichiba_item
+    write_csv(df, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 13, in write_csv
+    df.to_csv(file_name, index=False, encoding="shift-jis", mode='a', header=header)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\generic.py", line 3204, in to_csv
+    formatter.save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 204, in save
+    self._save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 325, in _save
+    self._save_chunk(start_i, end_i)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 356, in _save_chunk
+    libwriters.write_csv_rows(self.data, ix, self.nlevels, self.cols, self.writer)
+  File "pandas\_libs\writers.pyx", line 68, in pandas._libs.writers.write_csv_rows
+UnicodeEncodeError: 'shift_jis' codec can't encode character '\u2014' in position 41: illegal multibyte sequence
+
+[2020-12-01 14:06:51.868961]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 72, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 29, in write_ichiba_item
+    write_csv(df, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 13, in write_csv
+    df.to_csv(file_name, index=False, encoding="shift-jis", mode='a', header=header)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\generic.py", line 3204, in to_csv
+    formatter.save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 204, in save
+    self._save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 325, in _save
+    self._save_chunk(start_i, end_i)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 356, in _save_chunk
+    libwriters.write_csv_rows(self.data, ix, self.nlevels, self.cols, self.writer)
+  File "pandas\_libs\writers.pyx", line 68, in pandas._libs.writers.write_csv_rows
+UnicodeEncodeError: 'shift_jis' codec can't encode character '\u2014' in position 41: illegal multibyte sequence
+
+[2020-12-01 14:25:16.139855]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 50, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 72, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 21, in write_ichiba_item
+    for item_info in result_json.get("Items"):
+TypeError: 'NoneType' object is not iterable
+
+[2020-12-01 14:33:16.928165]ERROR:Traceback (most recent call last):
+  File "c:/work/python/kadai01/study06/main.py", line 52, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 72, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 21, in write_ichiba_item
+    for item_info in result_json.get("Items"):
+TypeError: 'NoneType' object is not iterable
+
+[2020-12-01 14:40:43.978587]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 52, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 72, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 21, in write_ichiba_item
+    for item_info in result_json.get("Items"):
+TypeError: 'NoneType' object is not iterable
+
+[2020-12-01 14:51:40.277678]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 52, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 74, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 30, in write_ichiba_item
+    write_csv(df, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 14, in write_csv
+    df.to_csv(file_name, index=False, encoding="shift-jis", mode='a', header=header)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\generic.py", line 3204, in to_csv
+    formatter.save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 204, in save
+    self._save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 325, in _save
+    self._save_chunk(start_i, end_i)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 356, in _save_chunk
+    libwriters.write_csv_rows(self.data, ix, self.nlevels, self.cols, self.writer)
+  File "pandas\_libs\writers.pyx", line 68, in pandas._libs.writers.write_csv_rows
+UnicodeEncodeError: 'shift_jis' codec can't encode character '\u5188' in position 69: illegal multibyte sequence
+
+[2020-12-01 19:10:22.337467]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 53, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 29, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 39, in get_ichiba_item_json
+    result_json = get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 17, in get_api
+    error.set_param(result.status_code, result.json().get["error_description"])
+TypeError: 'builtin_function_or_method' object is not subscriptable
+
+[2020-12-01 19:11:30.981028]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 53, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 32, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 42, in get_ichiba_item_json
+    result_json = get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 20, in get_api
+    error.set_param(result.status_code, result.json().get["error_description"])
+TypeError: 'builtin_function_or_method' object is not subscriptable
+
+[2020-12-01 19:21:26.020308]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 53, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 33, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 43, in get_ichiba_item_json
+    result_json = get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 21, in get_api
+    error.set_param(result.status_code, result.json().get["error_description"])
+TypeError: 'builtin_function_or_method' object is not subscriptable
+
+[2020-12-01 19:22:22.683385]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 53, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 33, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 43, in get_ichiba_item_json
+    result_json = get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 21, in get_api
+    error.set_param(result.status_code, result.json().get["error_description"])
+TypeError: 'builtin_function_or_method' object is not subscriptable
+
+[2020-12-01 19:23:30.678609]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 53, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 80, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 34, in write_ichiba_item
+    df = df[["商品名","価格"]]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1553, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\indexing.py", line 1640, in _validate_read_indexer
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['商品名', '価格'], dtype='object')] are in the [columns]"
+
+[2020-12-01 19:33:33.472088]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 53, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 33, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 43, in get_ichiba_item_json
+    result_json = get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 21, in get_api
+    error.set_param(result.status_code, result.json().get["error_description"])
+TypeError: 'builtin_function_or_method' object is not subscriptable
+
+[2020-12-01 19:42:33.838093]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 54, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 33, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 43, in get_ichiba_item_json
+    result_json = get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 22, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'keyword is not valid'}
+
+[2020-12-01 19:46:44.054243]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 54, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 33, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 44, in get_ichiba_item_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 22, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'keyword must be under 128 length'}
+
+[2020-12-01 19:47:47.905484]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 54, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 33, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 44, in get_ichiba_item_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 22, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'keyword is not valid'}
+
+[2020-12-01 19:50:08.017166]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 54, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 33, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 44, in get_ichiba_item_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 22, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'keyword is not valid'}
+
+[2020-12-02 18:30:38.053286]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 54, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 30, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 41, in get_ichiba_item_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 19, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'keyword is not valid'}
+
+[2020-12-02 18:48:35.504476]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 54, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 30, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 41, in get_ichiba_item_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 19, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'keyword is not valid'}
+
+[2020-12-02 18:48:40.579095]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 54, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 30, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 41, in get_ichiba_item_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 19, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'keyword is not valid'}
+
+[2020-12-02 19:35:00.199463]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 54, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 83, in get_ichiba_item
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 35, in write_ichiba_item
+    write_csv(df, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 19, in write_csv
+    df.to_csv(file_name, index=False, encoding="shift-jis", mode="a", header=header)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\core\generic.py", line 3204, in to_csv
+    formatter.save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 204, in save
+    self._save()
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 325, in _save
+    self._save_chunk(start_i, end_i)
+  File "C:\Users\masa4\anaconda3\lib\site-packages\pandas\io\formats\csvs.py", line 356, in _save_chunk
+    libwriters.write_csv_rows(self.data, ix, self.nlevels, self.cols, self.writer)
+  File "pandas\_libs\writers.pyx", line 68, in pandas._libs.writers.write_csv_rows
+UnicodeEncodeError: 'shift_jis' codec can't encode character '\u2014' in position 113: illegal multibyte sequence
+
+[2020-12-02 19:38:01.312587]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 54, in search_ichiba_item
+    result_disp = control.get_ichiba_item(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_ichiba_item
+    result_json = rakuten_api.get_ichiba_item_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 30, in get_ichiba_item_json_first
+    return get_ichiba_item_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 41, in get_ichiba_item_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 19, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'keyword is not valid'}
+
+[2020-12-02 20:07:12.118599]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 76, in search_product
+    result_disp = control.get_product(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 61, in get_product
+    result_json = rakuten_api.get_product_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 46, in get_product_json_first
+    return get_product_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 57, in get_product_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 18, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': "Product/Search doesn't have version 20170706"}
+
+[2020-12-02 20:09:34.561810]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 76, in search_product
+    result_disp = control.get_product(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 71, in get_product
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 27, in write_ichiba_item
+    for item_info in result_json.get("Items"):
+TypeError: 'NoneType' object is not iterable
+
+[2020-12-02 20:10:56.631172]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 76, in search_product
+    result_disp = control.get_product(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 71, in get_product
+    write_ichiba_item(result_json, file_name, header)
+  File "C:\work\python\kadai01\study06\control.py", line 27, in write_ichiba_item
+    for item_info in result_json.get("Items"):
+TypeError: 'NoneType' object is not iterable
+
+[2020-12-02 21:36:18.174740]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 100, in search_genre
+    result_disp = control.get_genre(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 136, in get_genre
+    result_json = rakuten_api.get_genre_json(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 69, in get_genre_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 19, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'wrong genreId format'}
+
+[2020-12-02 21:39:45.591183]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 100, in search_genre
+    result_disp = control.get_genre(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 136, in get_genre
+    result_json = rakuten_api.get_genre_json(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 70, in get_genre_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 19, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'wrong genreId format'}
+
+[2020-12-02 21:41:54.166829]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 100, in search_genre
+    result_disp = control.get_genre(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 136, in get_genre
+    result_json = rakuten_api.get_genre_json(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 70, in get_genre_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 19, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'wrong genreId format'}
+
+[2020-12-02 21:42:35.799270]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 100, in search_genre
+    result_disp = control.get_genre(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 136, in get_genre
+    result_json = rakuten_api.get_genre_json(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 70, in get_genre_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 19, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'wrong genreId format'}
+
+[2020-12-02 21:44:02.817497]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 100, in search_genre
+    result_disp = control.get_genre(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 136, in get_genre
+    result_json = rakuten_api.get_genre_json(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 70, in get_genre_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 19, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': 'wrong genreId format'}
+
+[2020-12-02 21:45:20.000063]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 100, in search_genre
+    print(keyword+keyword+keyword+keyword+keyword)
+TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
+
+[2020-12-02 22:05:35.747879]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 76, in search_product
+    result_disp = control.get_product(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 98, in get_product
+    result_json = rakuten_api.get_product_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 46, in get_product_json_first
+    return get_product_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 57, in get_product_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 18, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': "specify valid either one of keyword, productId or genreId parameter's value"}
+
+[2020-12-02 22:10:12.210088]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 76, in search_product
+    result_disp = control.get_product(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 98, in get_product
+    result_json = rakuten_api.get_product_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 46, in get_product_json_first
+    return get_product_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 57, in get_product_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 18, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': "specify valid either one of keyword, productId or genreId parameter's value"}
+
+[2020-12-02 22:13:35.932704]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 76, in search_product
+    result_disp = control.get_product(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 98, in get_product
+    result_json = rakuten_api.get_product_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 46, in get_product_json_first
+    return get_product_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 57, in get_product_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 18, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': "specify valid either one of keyword, productId or genreId parameter's value"}
+
+[2020-12-02 22:14:27.600244]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 76, in search_product
+    result_disp = control.get_product(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 98, in get_product
+    result_json = rakuten_api.get_product_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 46, in get_product_json_first
+    return get_product_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 57, in get_product_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 18, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': "specify valid either one of keyword, productId or genreId parameter's value"}
+
+[2020-12-02 22:15:31.200885]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/study06/main.py", line 76, in search_product
+    result_disp = control.get_product(keyword)
+  File "C:\work\python\kadai01\study06\control.py", line 98, in get_product
+    result_json = rakuten_api.get_product_json_first(keyword)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 46, in get_product_json_first
+    return get_product_json(keyword, 1)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 57, in get_product_json
+    return get_api(url)
+  File "C:\work\python\kadai01\study06\rakuten_api.py", line 18, in get_api
+    raise error
+error_exception.HttpStatusRakutenException: httpステータス : 400, メッセージ : {'error': 'wrong_parameter', 'error_description': "specify valid either one of keyword, productId or genreId parameter's value"}
+

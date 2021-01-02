@@ -1,0 +1,259 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <title>課題6</title>
+</head>
+
+<body>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" id="ichiba_item" val="1" href="#">楽天商品検索</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="product" val="2" href="#">商品価格ナビ製品検索</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  id="rank" val="3" href="#">楽天商品ランキング</a>
+      </li>
+    </ul>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="div1">
+        <table style="width:900px;">
+            <tr>
+                <th style="width:150px;">検索キーワード</th>
+                <td><input type=text id="ichiba_item_text"/> *1</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="search_button1" class="btn btn-primary">検索</button></td>
+            </tr>
+            <tr style="hight:80px;">
+                <td style="hight:80px;">&nbsp;</td>
+                <td style="padding-left: 30px;" >
+                    <div id="result1" class="alert alert-info" role="alert"></div>
+                    <div id="error1" class="alert alert-danger" role="alert"></div>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <div style="padding-left: 30px;">
+            <span>*1</span>
+            <span>検索キーワード全体は半角で128文字以内で指定する必要があります。</span><br/>
+            <span>検索キーワードは半角スペースで区切ることができ、AND条件になります。</span><br/>
+            <span> (すべてのキーワードが含まれるものを検索 )</span><br/>
+            <span>各検索キーワードは半角2文字 もしくは 全角1文字 以上で指定する必要があります。</span><br/>
+            <span>また例外として、各検索キーワードがひらがな・カタカナ・記号の場合は2文字以上で指定する必要があります。</span>
+        </div>
+        <br/>
+    </div>
+    <div id="div2">
+        <table style="width:900px;">
+            <tr>
+                <th style="width:150px;">検索キーワード</th>
+                <td><input type=text id="product_text"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="search_button2" class="btn btn-primary">検索</button></td>
+            </tr>
+            <tr style="hight:80px;">
+                <td style="hight:80px;">&nbsp;</td>
+                <td style="padding-left: 30px;" >
+                    <div id="result2" class="alert alert-info" role="alert"></div>
+                    <div id="error2" class="alert alert-danger" role="alert"></div>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+    </div>
+    <div id="div3">
+        <table style="width:900px;">
+            <tr>
+                <td style="width:150px;">
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ジャンル選択
+                      </button>
+                      <div id="genre_select" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                </td>
+                <td>
+                    <input type=text id="rank_text" style="width: 300px;"/>
+                    <input type=hidden id="rank_hidden"/>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="search_button3" class="btn btn-primary">検索</button></td>
+            </tr>
+            <tr style="hight:80px;">
+                <td style="hight:80px;">&nbsp;</td>
+                <td style="padding-left: 30px;" >
+                    <div id="result3" class="alert alert-info" role="alert"></div>
+                    <div id="error3" class="alert alert-danger" role="alert"></div>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+    </div>
+
+    <script type="text/javascript">
+        let loading = "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>Loading..."
+
+        // 検索後の共通処理
+        function search_after_common(returnVal, targetNum, word1){
+            if(returnVal["result"] == "ok") {
+                // 正常
+                $("#result" + targetNum).text("検索条件："+ word1 );
+                $("#result" + targetNum).append(document.createElement('br'))
+                $("#result" + targetNum).append(returnVal["message"])
+                $("#result" + targetNum).append(document.createElement('br'))
+                $("#result" + targetNum).append(returnVal["detail"])
+                $("#error" + targetNum).text("");
+                $("#result" + targetNum).show();
+                $("#error" + targetNum).hide();
+            } else { 
+                // エラー
+                $("#result" + targetNum).text("");
+                $("#error" + targetNum).text(returnVal["message"]);
+                $("#result" + targetNum).hide();
+                $("#error" + targetNum).show();
+            }
+            $("#search_button" + targetNum).attr("disabled",false);
+            $("#search_button" + targetNum).html("検索")
+        }
+        // 楽天商品検索(server呼び出し)
+        async function search_ichiba_item() {
+            let word1 = $("#ichiba_item_text").val();
+
+            $("#search_button1").attr("disabled",true);
+            $("#search_button1").html(loading)
+            let val = await eel.search_ichiba_item(word1)();
+            search_after_common(val, 1, word1);
+        }
+        
+        // 楽天商品検索
+        $("#search_button1").on('click', function() {
+          if($("#ichiba_item_text").val()==""){
+            alert("楽天商品検索/検索キーワードを入力してください");
+            return
+          }
+          search_ichiba_item();
+          return
+        });
+        
+        // 商品価格ナビ製品検索(server呼び出し)
+        async function search_product() {
+            let word1 = $("#product_text").val();
+            $("#search_button2").attr("disabled",true);
+            $("#search_button2").html(loading)
+            let val = await eel.search_product(word1)();
+            search_after_common(val, 2, word1);
+        }
+        
+        // 商品価格ナビ製品検索
+        $("#search_button2").on('click', function() {
+          if($("#product_text").val()==""){
+            alert("商品価格ナビ製品検索/検索キーワードを入力してください");
+            return
+          }
+          search_product();
+          return
+        });
+
+        // ジャンル検索(server呼び出し)
+        async function search_genre(word1) {
+            let val = await eel.search_genre(word1)();
+
+            
+            $("#genre_select").html("");
+            let genre_str = "";
+            console.log(val)            
+            $.each(val, function(index, value){
+                console.log(value)
+                genre_str = genre_str + "<a class='dropdown-item' val="
+                            + value["genreId"] + " href='#'>"
+                            + value["genreName"] +"</a>"
+            });
+            
+            $("#genre_select").html(genre_str);
+            return val;
+        }
+                
+        // ランキング検索(server呼び出し)
+        async function search_rank() {
+            let word1 = $("#rank_hidden").val();
+            let word2 = $("#rank_text").val();
+            $("#search_button3").attr("disabled",true);
+            $("#search_button3").html(loading)
+            let val = await eel.search_rank([word1, word2])();
+            search_after_common(val, 3, word1);
+        }
+        
+        // ランキング検索
+        $("#search_button3").on('click', function() {
+          if($("#rank_hidden").val()==""){
+            alert("ランキング検索/検索ジャンルを入力してください");
+            return
+          }
+          search_rank();
+          return
+        });
+
+        //　ナビのクリック処理
+        $(".nav-link").on('click', function() {
+          // 検索エリアの全消し
+          $("div[id^='div']").hide();
+          //　ナビの全消し
+          $(".nav-link").removeClass("active");
+          // 対象の検索エリア
+          show_target = "#div" + $(this).attr("val");
+          $(show_target).show();
+          $(this).addClass("active");
+          return
+        });
+        
+        // ジャンルのクリック処理
+        $("body").on("click", ".dropdown-item", function() {
+          // 
+          $("#rank_text").val($(this).text());
+          $("#rank_hidden").val($(this).attr("val"));
+          return
+        });
+        
+        //　初期表示
+        $("div[id^='result']").hide();
+        $("div[id^='error']").hide();
+        // ready後の処理
+        $(document).ready(function(){
+            //　ナビ左端をクリック
+            $(".nav-link")[0].click();
+            
+            let genres = search_genre("0");
+
+        });
+    </script>
+</body>
+</html>
