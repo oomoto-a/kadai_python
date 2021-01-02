@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Eel</title>
+</head>
+
+<body>
+    検索ソースファイル：<input type=text id="source_text" value="source.csv"/>
+    <br/>
+    検索ワード：<input type=text id="search_text"/>
+    <button id="send">検索</button>
+    <br/>
+    <textarea id="result_text" class="result"></textarea>
+      
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        async function run() {
+            var searchSource = $("#source_text").val();
+            var searchWord = $("#search_text").val();
+            let val = await eel.python_function2(searchSource, searchWord)();
+            if($("#result_text").val() != ""){
+                $("#result_text").val($("#result_text").val()+"\n" + val);
+            }else{ 
+                $("#result_text").val($("#result_text").val() + val);
+            }
+        }
+        
+        $("#send").on('click', function() {
+          if($("#source_text").val()==""){
+            alert("検索ソースファイルを入力してください");
+            return
+          }
+          if($("#search_text").val()==""){
+            alert("検索ワードを入力してください");
+            return
+          }
+          run();
+          return
+        });
+    </script>
+</body>
+</html>
