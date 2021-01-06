@@ -1,0 +1,10 @@
+
+[2020-12-29 23:06:05.943705]ERROR:Traceback (most recent call last):
+  File "C:/work/python/kadai01/Christmas/main.py", line 54, in search_lancers
+    result_disp = control.search_lancers(url, param)
+  File "C:\work\python\kadai01\Christmas\control.py", line 40, in search_lancers
+    lancers_array = selenium_logic.get_lancers(url, param)
+  File "C:\work\python\kadai01\Christmas\selenium_logic.py", line 95, in get_lancers
+    driver.find_elements_by_id("UserEmail").send_keys(param["email"])
+AttributeError: 'list' object has no attribute 'send_keys'
+

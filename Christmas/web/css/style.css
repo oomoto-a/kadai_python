@@ -1,0 +1,12 @@
+textarea.result {
+    width: 350px;
+    height: 300px;
+}
+.select_menu > .dropdown-menu:first-child  {
+    position: static;
+    display: block;
+}
+
+table tr:nth-child(odd) td {
+	background: #eee;
+}

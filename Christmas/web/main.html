@@ -1,0 +1,215 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/const.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="js/main.js"></script>
+    <title>案件情報取得</title>
+</head>
+
+<body>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" id="ichiba_item" val="1" href="#">ランサーズ検索</a>
+      </li>
+      <!---
+      <li class="nav-item">
+        <a class="nav-link" id="product" val="3" href="#">クラウドワークス検索</a>
+      </li>
+      --->
+    </ul>
+    <br/>
+
+    <div id="div1">
+        <table class="table" style="width:950px;">
+            <tr>
+                <td style="width: 30%;">カテゴリ選択</td>
+                <td colspan="2">
+                    <br/>
+                    <div class="container">
+                        <div class="row">
+                        
+                            <div class="col">
+
+                                <div class="dropdown_parent ">
+                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    親カテゴリ
+                                  </button>
+                                  <div id="select_parent" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  </div>
+                                </div>
+                                
+                                <br/>
+
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+
+                                <div class="dropdown_child">
+                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    子カテゴリ
+                                  </button>
+                                  <div id="select_child" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  </div>
+                                </div>
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="dropdown_grandchild">
+                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    孫カテゴリ
+                                  </button>
+                                  <div id="select_grandchild" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  </div>
+                                </div>
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <br/>
+
+                                選択カテゴリ:
+                                <input type="text" id="lancers_text" class="form-control" readonly=true style="width: 70%;display: inline;"/>
+                                <input type="hidden" id="lancers_hidden"/>
+                                <input type="hidden" id="lancers_id_hidden"/>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </td>
+            </tr>
+
+            <tr style="hight:80px;">
+                <td>
+                    ログイン情報入力<br/>
+                    （ログインは任意です）
+                </td>
+                <td style="padding-left: 30px;" colspan="2">
+                  <div class="form-group">
+                    <br/>
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" id="lancers_email" class="form-control" placeholder="Enter email"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="lancers_password" placeholder="Password">
+                  </div>
+                </td>
+            </tr>
+
+            <tr style="hight:80px;">
+                <td>表示順
+                </td>
+                <td style="padding-left: 30px;" colspan="2">
+                    <br/>
+                    <div class="form-group">
+                      <label for="select1a"></label>
+                      <select id="select1a" >
+                        <option value="started">新着順</option>
+                        <option value="deadlined">残り時間が少ない順</option>
+                        <option value="budget">報酬が高い順</option>
+                        <option value="proposal">提案が多い順</option>
+                      </select>
+                    </div>            
+                </td>
+            </tr>
+            <tr style="hight:80px;">
+                <td>
+                </td>
+                <td style="padding-left: 30px;" colspan="2">
+                    <button id="search_button_lancers" class="btn btn-primary" 
+                    style="margin-left: auto;margin-right: auto;display: block;">　  検索   　</button>
+                </td>
+            </tr>
+        </table>
+        <div id="result_lancers" class="alert alert-info" role="alert"></div>
+        <div id="error_lancers" class="alert alert-danger" role="alert"></div>
+        <br/>
+        <br/>
+    </div>
+    
+    
+    <div id="div2">
+        <table style="width:900px;">
+            <tr>
+                <td style="width:300px;">
+
+                    <div class="dropdown_parent ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        親カテゴリ選択
+                      </button>
+                      <div id="select_crowdworks_parent" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      </div>
+                    </div>
+                </td>
+                <td style="width:300px;">
+                    <div class="dropdown_child">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        子カテゴリ選択
+                      </button>
+                      <div id="select_crowdworks_child" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      </div>
+                    </div>
+                </td>
+                <td style="width:300px;">
+                    <div class="dropdown_grandchild">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        孫カテゴリ選択
+                      </button>
+                      <div id="select_crowdworks_grandchild" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="hight:80px;">
+                <td style="padding-left: 30px;" colspan="3">
+                    &nbsp;
+                    <br/>
+                    <br/>
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <td>選択カテゴリ</td>
+                <td>
+                    <input type="text" id="crowdworks_text" class="form-control" readonly=true style="width: 300px;"/>
+                    <input type="hidden" id="crowdworks_hidden"/>
+                </td>
+                <td><button id="search_button_crowdworks" class="btn btn-primary">検索</button></td>
+            </tr>
+            <tr style="hight:80px;">
+                <td style="padding-left: 30px;" colspan="3">
+                    &nbsp;
+                    <div id="result_crowdworks" class="alert alert-info" role="alert"></div>
+                    <div id="error_crowdworks" class="alert alert-danger" role="alert"></div>
+                </td>
+            </tr>
+
+        </table>
+        <br/>
+        <br/>
+    </div>
+
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
