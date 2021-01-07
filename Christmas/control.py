@@ -34,7 +34,7 @@ def write_info(info_array, file_name, header):
 
 def save_search_info(url, param):
     #***********************  DB部分  ********************************
-    dbname = common_func.resource_path("./db/INFO.db")
+    dbname = common_func.get_dbname()
     conn = sqlite3.connect(dbname)
     # sqliteを操作するカーソルオブジェクトを作成
     cur = conn.cursor()
@@ -60,9 +60,14 @@ def save_search_info(url, param):
     conn.close()
 
 def select_search_info():
+    if not common_func.exists_db():
+        # DBファイルがない場合作成
+        common_func.init_db()
+        
+        
     result = {"email": "", "password": "", "name": "", "url": "", "sort":""}
     #***********************  DB部分  ********************************
-    dbname = common_func.resource_path("./db/INFO.db")
+    dbname = common_func.get_dbname()
     conn = sqlite3.connect(dbname)
     # sqliteを操作するカーソルオブジェクトを作成
     cur = conn.cursor()
